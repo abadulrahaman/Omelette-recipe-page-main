@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Recipe page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f3e2e2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .items {
+      background-color: white;
+      width: 720px;
+      height: 1525px;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 150px 0px;
+    }
+
+    .items img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .items p {
+      font-family: Arial;
+    }
+
+    .head_1 {
+      margin: 20px 0px;
+    }
+
+    .head_1 h1 {
+      font-size: 42px;
+    }
+
+    .preparation {
+      background-color: #f1cfdb;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 150px;
+      font-family: Arial;
+    }
+
+    .preparation h3 {
+      color: rgb(142, 24, 87);
+      padding-top: 15px;
+      margin: 12px;
+    }
+
+    .preparation ul {
+      margin-left: 20px;
+    }
+
+    .preparation ul li {
+      margin: 10px;
+    }
+
+    .ingredients {
+      font-family: Arial;
+    }
+
+    .ingredients h1 {
+      color: rgba(168, 40, 68, 0.648);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul {
+      margin-left: 20px;
+    }
+
+    .ingredients ul li {
+      margin: 10px;
+    }
+
+    .line-1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .instructions {
+      font-family: Arial;
+    }
+
+    .instructions h1 {
+      color: rgba(168, 40, 68, 0.648);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .instructions ol {
+      margin-left: 20px;
+    }
+
+    .instructions ol li {
+      margin: 10px;
+    }
+
+    .line-2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .nutrition h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: rgba(168, 40, 68, 0.648);
+    }
+
+    .nutrition p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .nut_1 {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+
+    .calories {
+      margin-left: 30px;
+      margin-right: 260px;
+    }
+    .kcal {
+      color: rgba(168, 40, 68, 0.648);
+      font-weight: bolder;
+    }
+
+    .line-3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .nut_2 {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+
+    .Carbs {
+      margin-left: 30px;
+      margin-right: 275px;
+    }
+
+    .grams_1 {
+      color: rgba(168, 40, 68, 0.648);
+      font-weight: bolder;
+    }
+
+    .line-4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .nut_3 {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+
+    .Protein {
+      margin-left: 30px;
+      margin-right: 265px;
+    }
+
+    .grams_2 {
+      color: rgba(168, 40, 68, 0.648);
+      font-weight: bolder;
+    }
+
+    .line-5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .nut_4 {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+
+    .Fat {
+      margin-left: 30px;
+      margin-right: 290px;
+    }
+
+    .grams_3 {
+      color: rgba(168, 40, 68, 0.648);
+      font-weight: bolder;
+    }
+
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+
+<body>
+
+  <div class="items">
+    <div class="img">
+      <img src="assets/images/image-omelette.jpeg" alt="Error!!">
+    </div>
+
+    <div class="head_1">
+      <h1>
+        Simple Omelette Recipe
+      </h1>
+    </div>
+
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+    <div class="preparation">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><b>Total</b>: Approximately 10 minutes</li>
+        <li><b>Preparation</b>: 5 minutes</li>
+        <li><b>Cooking</b>: 5 minutes</li>
+      </ul>
+    </div>
+
+    <div class="ingredients">
+      <h1>Ingredients</h2>
+        <ul>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+    </div>
+
+    <div class="line-1">
+      <hr>
+    </div>
+
+    <div class="instructions">
+      <h1>Instructions</h1>
+      <ol>
+        <li>
+          <b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+          You can add a tablespoon of water or milk for a fluffier texture.
+        </li>
+        <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li>
+          <b>Heat the pan</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+          the eggs evenly coat the surface.
+        </li>
+        <li>
+          <b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the
+          middle, sprinkle your chosen fillings over one half of the omelette.
+        </li>
+        <li>
+          <b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.
+        </li>
+        <li><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </div>
+
+    <div class="line-2">
+      <hr>
+    </div>
+
+    <div class="nutrition">
+      <h1>Nutrition</h1>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+      <div class="nut_1">
+        <div class="calories">
+          Calories
+        </div>
+        <div class="kcal">
+          277kcal
+        </div>
+      </div>
+      <div class="line-3">
+        <hr>
+      </div>
+
+
+      <div class="nut_2">
+        <div class="Carbs">
+          Carbs
+        </div>
+        <div class="grams_1">
+          0g
+        </div>
+      </div>
+      <div class="line-4">
+        <hr>
+      </div>
+
+      <div class="nut_3">
+        <div class="Protein">
+          Protein
+        </div>
+        <div class="grams_2">
+          20g
+        </div>
+      </div>
+      <div class="line-5">
+        <hr>
+      </div>
+
+      <div class="nut_4">
+        <div class="Fat">
+          Fat
+        </div>
+        <div class="grams_3">
+          22g
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
